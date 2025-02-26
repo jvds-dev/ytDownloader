@@ -8,7 +8,7 @@ def audio_download(url, download_path="downloads"):
         os.makedirs(download_path)
 
     ydl_opts = {
-        'ffmpeg_location': r'C:\ffmpeg\bin',
+        'ffmpeg_location': r'C:.\bin',
         'format': 'bestaudio/best',
         'outtmpl': f'{download_path}/%(title)s.%(ext)s',
         'noplaylist': False,
